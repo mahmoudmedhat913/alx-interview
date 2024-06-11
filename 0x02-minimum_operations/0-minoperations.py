@@ -4,17 +4,11 @@
 
 def minOperations(n: int) -> int:
     """minimum operations"""
-    next = 'H'
-    body = 'H'
+    process = 2
     op = 0
-    while (len(body) < n):
-        if n % len(body) == 0:
-            op += 2
-            next = body
-            body += body
-        else:
-            op += 1
-            body += next
-    if len(body) != n:
-        return 0
+    while (n > 1):
+        while n % process == 0:
+            op += process
+            n /= process
+        process += 1
     return op
