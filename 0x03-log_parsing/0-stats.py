@@ -8,7 +8,7 @@ import re
 def extract_input(input_line):
     '''extract section'''
     fp = (
-        r'\s*(?P<ip>\S+0\s*',
+        r'\s*(?P<ip>\S+)\s*',
         r'\s*\[(?P<date>\d+\-\d+\-\d+ \d+:\d+:\d+\.\d+)\]',
         r'\s*"(?P<request>[^"]*)"\s*',
         r'\s*(?P<status_code>\S+)',
