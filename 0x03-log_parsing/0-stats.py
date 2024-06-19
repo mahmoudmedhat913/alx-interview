@@ -1,12 +1,16 @@
 #!/usr/bin/python3
-"""log parser"""
+"""
+log parser
+"""
 
 import sys
 import re
 
 
 def output(log: dict) -> None:
-    """helper function"""
+    """
+    helper function
+    """
     print("File size: {}".format(log["file_size"]))
     for code in sorted(log["code_frequency"]):
         if log["code_frequency"][code]:
