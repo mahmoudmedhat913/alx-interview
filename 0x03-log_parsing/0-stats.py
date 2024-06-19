@@ -34,7 +34,7 @@ if __name__ == "__main__":
                 file_size = int(match.group(2))
 
                 # File size
-                log["file_size"] += file-size
+                log["file_size"] += file_size
 
                 # status code
                 if (code.isdecimal()):
