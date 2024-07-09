@@ -3,13 +3,13 @@
 const request = require('request');
 
 const req = (arr, i) => {
-  if (i == arr.length) return;
+  if (i === arr.length) return;
   request(arr[i], (err, response, body) => {
     if (err) {
       throw err;
     } else {
       console.log(JSON.parse(body).name);
-      req(arr, i + 1)
+      req(arr, i + 1);
     }
   });
 };
@@ -21,7 +21,7 @@ request(
       throw err;
     } else {
       const chars = JSON.parse(body).characters;
-      req(chars, 0)
+      req(chars, 0);
     }
   }
 );
