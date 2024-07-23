@@ -2,7 +2,7 @@
 """Making changes"""
 
 
-def makeChanges(coins, total):
+def makeChange(coins, total):
     """generate changes needed to reach total
     """
     if total <= 0:
