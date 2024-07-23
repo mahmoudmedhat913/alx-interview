@@ -13,7 +13,7 @@ def makeChanges(coins, total):
     for i in coins:
         while check < total:
             check += i
-            temp += i
+            temp += 1
         if check == total:
             return temp
         check -= i
