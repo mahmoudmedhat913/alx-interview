@@ -33,7 +33,7 @@ def isWinner(x, nums):
     return None
 
 
-def rm_multiplies(ls, x):
+def rm_multiples(ls, x):
     """remove multiple of prime numbers"""
     for i in range(2, len(ls)):
         try:
