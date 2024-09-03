@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""module defining is winner function"""
+"""Module defining isWinner function."""
 
 
 def isWinner(x, nums):
-    """function to get who has won"""
+    """Function to get who has won in prime game"""
     mariaWinsCount = 0
     benWinsCount = 0
 
